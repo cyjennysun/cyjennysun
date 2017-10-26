@@ -7,7 +7,6 @@ body{
   position: relative;
   width: 100%;
   z-index: 3;
-  font-family:'Montserrat';
   float:left;
   
 }
@@ -17,15 +16,17 @@ body{
   padding-right: 20px;
   list-style: none;
   overflow: hidden;
-  font-family:'Montserrat';
+
 }
 
 .header li a{
   display: block;
   padding: 20px 40px;
   text-decoration: none;
-  font-family:'Montserrat';
+  font-family:'Lucida Grande', Tahoma, Helvetica, sans-serif;
+  font-weight: 500;
   color: white;
+  font-size:17px;
 }
 
 .header li a:hover,
@@ -49,8 +50,8 @@ body{
   margin-left: 37px;
   padding-right: 5px;
   text-decoration: none;
-  font-family:'Montserrat';
-  font-weight: 700;
+  font-family:'Tahoma', Lucida Grande, Helvetica, sans-serif;
+  font-weight: 900;
   color: white;
 }
 
@@ -154,15 +155,16 @@ body{
 
 .main{
   color: white;
-  font-family: 'Vollkorn', serif;
+  font-family: 'Georgia', serif;
   font-size: 35px;
+  font-weight: 400;
   text-align: center;
  
  }
 
  #reel{
   color: white;
-  font-family: 'Montserrat';
+  font-family: 'Lucida Grande', Tahoma, Helvetica, sans-serif;
   font-size: 30px;
   text-align: center;
 
@@ -199,7 +201,7 @@ body{
 
 .hello{
   color: white;
-  font-family: 'Cardo';
+  font-family: 'Baskerville', serif;
   font-size: 42px;
   padding-left: 45px;
   
@@ -212,7 +214,7 @@ body{
 
 .email{
   color: white;
-  font-family: 'Cardo';
+  font-family: 'Baskerville', serif;
   font-size: 37px;
   padding-left: 100px;
   margin-top: -45px;
@@ -243,7 +245,8 @@ body{
 .portfolio-content ul{
   padding: 60px 90px;
   font-size: 22px;
-  font-family:'Gotham Narrow', sans-serif;
+  font-family: 'Gill Sans', Calibri, sans-serif;
+  font-weight: 100;
   list-style-type: none;
   text-align: center;
 
@@ -341,7 +344,7 @@ html, body {width:100%}
   margin-top:-180px;
   padding-top: 5px;
   margin-left: 30px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Gill Sans', Calibri, sans-serif;
   font-size:23px;
   font-weight:100;
   opacity:0;
@@ -376,7 +379,7 @@ html, body {width:100%}
 /*Works Descriptions*/
 .works-title{
   color: #84837E;
-  font-family: 'Oswald Regular';
+  font-family: 'Gill Sans', Verdana;
   font-size: 35px;
   padding-top: 60px;
   margin-right:auto;
@@ -388,7 +391,7 @@ html, body {width:100%}
 }
 .works-descriptions{
   color: #84837E;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', Helvetica, sans-serif;
   font-weight: 100;
   font-size: 20px;
   margin-right:auto;
@@ -428,7 +431,7 @@ html, body {width:100%}
 /*about*/
 .quote{
   color: white;
-  font-family: 'Cardo', serif;
+  font-family: 'Baskerville', serif;
   font-size: 40px;
   padding-left: 45px;
  }
@@ -456,11 +459,12 @@ html, body {width:100%}
 
  .about{
   color: #878681;
-  font-family: 'Cardo', serif;
-  font-size: 21px;
+  font-family: 'Baskerville', serif;
+  font-size: 24px;
   padding-top: 5%;
   padding-left: 7%;
   padding-right: 5.5%;
+  line-height: 1.4;
     }
 
 .profile img{
@@ -512,7 +516,7 @@ html, body {width:100%}
 
 .copyright{
   color: white;
-  font-family: 'Cardo'
+  font-family: 'Baskerville', serif;
 }
 
 /*Homepage Reel*/
