@@ -23,10 +23,10 @@ body{
   display: block;
   padding: 20px 40px;
   text-decoration: none;
-  font-family:'Lucida Grande', Tahoma, Helvetica, sans-serif;
+  font-family:'Gill Sans', Lucida Grande, Tahoma, Helvetica, sans-serif;
   font-weight: 500;
   color: white;
-  font-size:17px;
+  font-size:17.5px;
 }
 
 .header li a:hover,
@@ -50,8 +50,8 @@ body{
   margin-left: 37px;
   padding-right: 5px;
   text-decoration: none;
-  font-family:'Tahoma', Lucida Grande, Helvetica, sans-serif;
-  font-weight: 900;
+  font-family:'Gill Sans', Tahoma, Lucida Grande, Helvetica, sans-serif;
+  font-weight: 700;
   color: white;
 }
 
@@ -164,7 +164,7 @@ body{
 
  #reel{
   color: white;
-  font-family: 'Lucida Grande', Tahoma, Helvetica, sans-serif;
+  font-family: 'Gill Sans', Lucida Grande, Tahoma, Helvetica, sans-serif;
   font-size: 30px;
   text-align: center;
 
