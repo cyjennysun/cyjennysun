@@ -44,7 +44,7 @@ body{
 .header .myname{
   display: block;
   float: left;
-  font-size: 2em;
+  font-size: 1.7em;
   margin-top:20px; 
   padding-top: 5px;
   margin-left: 37px;
@@ -155,23 +155,26 @@ body{
 
 .main{
   color: white;
-  font-family: 'Georgia', serif;
-  font-size: 35px;
-  font-weight: 400;
+  font-family:'Gill Sans', Trebuchet MS, Lato, Tahoma, Lucida Grande, Helvetica, sans-serif;
+  font-size: 42px;
+  font-weight: 600;
   text-align: center;
  
  }
 
  #reel{
   color: white;
-  font-family: 'Gill Sans', Lucida Grande, Tahoma, Helvetica, sans-serif;
-  font-size: 30px;
+  font-family: 'Gill Sans', Trebuchet MS, Lucida Grande, Tahoma, Helvetica, sans-serif;
+  font-size: 24px;
   text-align: center;
 
 }
 #reel a{
   color: pink;
   text-decoration: none;
+  border: 2px solid ;
+  padding: 10px 50px;
+  border-radius: 50px;
 
 }
 
@@ -179,6 +182,31 @@ body{
   background-color:#616062;
   border: 2px solid ;
   padding: 10px 50px;
+  border-radius: 50px;
+}
+
+#design{
+  color: white;
+  font-family: 'Gill Sans', Trebuchet MS, Lucida Grande, Tahoma, Helvetica, sans-serif;
+  font-size: 24px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+#design a{
+  color: pink;
+  text-decoration: none;
+  border: 2px solid ;
+  padding: 10px 36px;
+  border-radius: 50px;
+
+}
+
+#design a:hover{
+  background-color:#616062;
+  border: 2px solid ;
+  padding: 10px 36px;
+  border-radius: 50px;
 }
 
 /*Home Page*/
@@ -245,8 +273,8 @@ body{
 .portfolio-content ul{
   padding: 60px 90px;
   font-size: 22px;
-  font-family: 'Gill Sans', Calibri, sans-serif;
-  font-weight: 100;
+  font-family:'Gill Sans', Lato, Tahoma, Lucida Grande, Helvetica, sans-serif;
+  font-weight: 200;
   list-style-type: none;
   text-align: center;
 
@@ -291,6 +319,11 @@ body{
 
 .portfolio-content .video-essay{
   color:pink;
+}
+
+.portfolio-content .design{
+  color:pink;
+
 }
 
 
@@ -344,7 +377,7 @@ html, body {width:100%}
   margin-top:-180px;
   padding-top: 5px;
   margin-left: 30px;
-  font-family: 'Gill Sans', Calibri, sans-serif;
+  font-family: 'Gill Sans', Lato, sans-serif;
   font-size:23px;
   font-weight:100;
   opacity:0;
@@ -379,7 +412,7 @@ html, body {width:100%}
 /*Works Descriptions*/
 .works-title{
   color: #84837E;
-  font-family: 'Gill Sans', Verdana;
+  font-family: 'Gill Sans', Trebuchet MS, Verdana;
   font-size: 35px;
   padding-top: 60px;
   margin-right:auto;
@@ -390,13 +423,12 @@ html, body {width:100%}
 
 }
 .works-descriptions{
-  color: #84837E;
-  font-family: 'Open Sans', Helvetica, sans-serif;
-  font-weight: 100;
-  font-size: 20px;
+  color: #747470;
+  font-family: 'Lato', sans-serif;
+  font-size: 21px;
   margin-right:auto;
   margin-left:auto; 
-  line-height: 160%;
+  line-height: 1.7;
   width: 80%;
   max-width: 100%; 
   
@@ -458,13 +490,13 @@ html, body {width:100%}
 }
 
  .about{
-  color: #878681;
-  font-family: 'Baskerville', serif;
-  font-size: 24px;
+  color: #747470;
+  font-family: 'Lato', sans-serif;
+  font-size: 21px;
   padding-top: 5%;
   padding-left: 7%;
   padding-right: 5.5%;
-  line-height: 1.4;
+  line-height: 1.7;
     }
 
 .profile img{
