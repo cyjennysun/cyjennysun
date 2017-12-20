@@ -425,7 +425,6 @@ html, body {width:100%}
 .works-descriptions{
   color: #747470;
   font-family: 'Lato', sans-serif;
-  font-weight: 200;
   font-size: 21px;
   margin-right:auto;
   margin-left:auto; 
@@ -494,7 +493,6 @@ html, body {width:100%}
   color: #747470;
   font-family: 'Lato', sans-serif;
   font-size: 21px;
-  font-weight: 200;
   padding-top: 5%;
   padding-left: 7%;
   padding-right: 5.5%;
