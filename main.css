@@ -492,6 +492,7 @@ html, body {width:100%}
  .about{
   color: #747470;
   font-family: 'Lato', sans-serif;
+  font-weight: 200;
   font-size: 21px;
   padding-top: 5%;
   padding-left: 7%;
