@@ -2,6 +2,12 @@ body{
    background-color: black;
 }
 
+.webdev{
+  background-color: #fcfcfc;
+  border-top: 20px solid black;
+
+}
+
 /*header*/
 .header{
   position: relative;
@@ -23,8 +29,8 @@ body{
   display: block;
   padding: 20px 40px;
   text-decoration: none;
-  font-family:'Gill Sans', Lucida Grande, Tahoma, Helvetica, sans-serif;
-  font-weight: 500;
+  font-family:'Gill Sans', Montserrat, Lucida Grande, Helvetica, sans-serif;
+  font-weight: 300;
   color: white;
   font-size:17.5px;
 }
@@ -50,7 +56,7 @@ body{
   margin-left: 37px;
   padding-right: 5px;
   text-decoration: none;
-  font-family:'Gill Sans', Tahoma, Lucida Grande, Helvetica, sans-serif;
+  font-family:'Gill Sans', Montserrat, Helvetica, sans-serif;
   font-weight: 700;
   color: white;
 }
@@ -131,7 +137,7 @@ body{
 }
 
 /*nav responsive*/
-@media (min-width: 48em) {
+@media screen and (min-width: 48em) {
   .header li {
     float: left;
   }
@@ -149,13 +155,10 @@ body{
 }
 
 
-
-
-
-
+/*homepage*/
 .main{
   color: white;
-  font-family:'Gill Sans', Trebuchet MS, Lato, Tahoma, Lucida Grande, Helvetica, sans-serif;
+  font-family:'Gill Sans', Montserrat, Lato, Tahoma, Lucida Grande, Helvetica, sans-serif;
   font-size: 42px;
   font-weight: 600;
   text-align: center;
@@ -164,8 +167,8 @@ body{
 
  #reel{
   color: white;
-  font-family: 'Gill Sans', Trebuchet MS, Lucida Grande, Tahoma, Helvetica, sans-serif;
-  font-size: 24px;
+  font-family: 'Gill Sans', Lato, Lucida Grande, Tahoma, Helvetica, sans-serif;
+  font-size: 23px;
   text-align: center;
 
 }
@@ -187,8 +190,8 @@ body{
 
 #design{
   color: white;
-  font-family: 'Gill Sans', Trebuchet MS, Lucida Grande, Tahoma, Helvetica, sans-serif;
-  font-size: 24px;
+  font-family: 'Gill Sans', Lato, Lucida Grande, Tahoma, Helvetica, sans-serif;
+  font-size: 23px;
   text-align: center;
   margin-top: 50px;
 }
@@ -209,23 +212,32 @@ body{
   border-radius: 50px;
 }
 
-/*Home Page*/
-.outer {
-    display: table;
-    position: absolute;
-    height: 70%;
-    width: 100%;
+#code{
+  color: white;
+  font-family: 'Gill Sans', Lato, Lucida Grande, Tahoma, Helvetica, sans-serif;
+  font-size: 23px;
+  text-align: center;
+  margin-top: 50px;
 }
-.middle {
-    display: table-cell;
-    vertical-align: middle;
-  }
 
-.inner {
-    margin-left: auto;
-    margin-right: auto; 
-    width: 100%;
+#code a{
+  color: pink;
+  text-decoration: none;
+  border: 2px solid ;
+  padding: 10px 25px;
+  border-radius: 50px;
+
 }
+
+#code a:hover{
+  background-color:#616062;
+  border: 2px solid ;
+  padding: 10px 25px;
+  border-radius: 50px;
+}
+
+
+
 
 .hello{
   color: white;
@@ -235,10 +247,12 @@ body{
   
 }
 
-.fa{
+.fa-envelope-o{
   margin-left: 48px;
   color: white;
+  font-size: 35px !important;
 }
+
 
 .email{
   color: white;
@@ -248,7 +262,7 @@ body{
   margin-top: -45px;
 }  
 
-.hello, .fa, .email{
+.hello, .fa-envelope-o, .email{
   animation: fadein 2s;
   -webkit-animation: fadein 2s;
 }
@@ -270,10 +284,11 @@ body{
     }
 }
 
+/*work*/
 .portfolio-content ul{
   padding: 60px 90px;
   font-size: 22px;
-  font-family:'Gill Sans', Lato, Tahoma, Lucida Grande, Helvetica, sans-serif;
+  font-family:'Gill Sans', Montserrat, Lato, Lucida Grande, Helvetica, sans-serif;
   font-weight: 200;
   list-style-type: none;
   text-align: center;
@@ -285,7 +300,6 @@ body{
   text-decoration: none;
   display: block;
   margin: 20px;
-  padding: 0px 3px;
   background-color:black;
   border-bottom: 2px solid #616062;
   padding: 5px 20px;
@@ -325,6 +339,9 @@ body{
   color:pink;
 
 }
+
+
+
 
 
 * {margin:0;padding:0;box-sizing:border-box}
@@ -412,7 +429,7 @@ html, body {width:100%}
 /*Works Descriptions*/
 .works-title{
   color: #84837E;
-  font-family: 'Gill Sans', Trebuchet MS, Verdana;
+  font-family: 'Gill Sans', Lato, sans-serif;
   font-size: 35px;
   padding-top: 60px;
   margin-right:auto;
@@ -499,7 +516,11 @@ html, body {width:100%}
   padding-left: 7%;
   padding-right: 5.5%;
   line-height: 1.7;
-    }
+}
+
+.about_hi{
+  padding-top: 4%;
+}
 
 .profile img{
   width: 300px;
@@ -522,6 +543,7 @@ html, body {width:100%}
 
 
 .fa-facebook, .fa-instagram, .fa-vimeo{
+  color: white;
   width: 100%;
   margin-right: auto;
   margin-left: auto;
@@ -577,17 +599,367 @@ html, body {width:100%}
 
 @media (min-aspect-ratio: 16/9) {
   .fullscreen-bg__video {
-    height: 300%;
-    top: -100%;
+    height: 380%;
+    top: -140%;
   }
 }
 
 @media (max-aspect-ratio: 16/9) {
   .fullscreen-bg__video {
-    width: 300%;
-    left: -100%;
+    width: 380%;
+    left: -140%;
+  }
+} 
+
+
+
+/*pixel art maker page*/
+
+.pixel_title{
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+  color: #4169E1;
+  padding-left: 9%;
+  padding-top: 120px;
+  padding-bottom: 90px;
+  border-bottom: 1.35px solid lightgrey;
+  word-spacing: 3px;
+}
+
+.view_project{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 25px;
+  letter-spacing: 0.7px;
+  padding-left: 16.5%;
+  padding-top: 85px;
+
+}
+
+.view_project a{
+  color: black;
+  text-decoration: none;
+  border: 1px solid;
+  padding: 10px 15px;
+  border-radius: 5px;
+
+}
+
+.view_project a:hover{
+  border: 2px solid;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.webdev_sub_title{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  letter-spacing: 0.7px;
+  padding-left: 16.5%;
+  padding-top: 80px;
+  
+}
+
+.webdev_sub_content{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 18.5px;
+  line-height: 1.5;
+  padding-left: 16.5%;
+  padding-top: 28px;
+  width: 82%;
+}
+
+.webdev_sub_content_list{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 18.5px;
+  line-height: 1.6;
+  padding-left: 18.5%;
+  padding-top: 28px;
+  width: 82%;
+}
+
+/*.color_schemes li{
+  display: inline;
+  font-size: 22px;
+  line-height: 5.3;
+  list-style-type: none;
+  margin-left: 17%;
+  width: 82%;
+}*/
+
+.color_schemes li{
+  display: inline-block;
+  line-height: 7;
+  margin-top: 52px;
+  margin-left: 17%;
+  margin-right: -13%;  
+}
+
+#pixel_color1{
+  border: 1px solid lightcyan;
+  background-color: lightcyan;
+  padding: 15px 55px; 
+}
+
+#pixel_color2{
+  border: 1px solid #83CAFA;
+  background-color: #83CAFA;
+  padding: 15px 55px;
+}
+
+#pixel_color3{
+  border: 1px solid #4169E1;
+  background-color: #4169E1;
+  padding: 15px 55px;
+}
+
+#pixel_color4{
+  border: 1px solid lightgrey;
+  background-color: lightgrey;
+  padding: 15px 55px;
+}
+
+.black_social{
+  border: 1px solid black;
+  background-color: black;
+  padding-bottom: 50px;
+  padding-top: 30px;}
+
+
+.drum_title{
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+  color: #FFB137;
+  padding-left: 9%;
+  padding-top: 120px;
+  padding-bottom: 90px;
+  border-bottom: 1.35px solid lightgrey;
+  word-spacing: 3px;
+}
+
+#drum_color1{
+  border: 1px solid #4152A5;
+  background-color: #4152A5;
+  padding: 15px 55px;
+}
+
+#drum_color2{
+  border: 1px solid #FFB137;
+  background-color: #FFB137;
+  padding: 15px 55px;
+}
+
+#drum_color3{
+  border: 1px solid #F36747;
+  background-color: #F36747;
+  padding: 15px 55px;
+}
+
+.exlink a{
+  text-decoration: none;
+}
+
+.clock_title{
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+  color: #81B446;
+  padding-left: 9%;
+  padding-top: 120px;
+  padding-bottom: 90px;
+  border-bottom: 1.35px solid lightgrey;
+  word-spacing: 3px;
+}
+
+#clock_color1{
+  border: 1px solid #81B446;
+  background-color: #81B446;
+  padding: 15px 55px;
+}
+
+#clock_color2{
+  border: 1px solid #5F383C;
+  background-color: #5F383C;
+  padding: 15px 55px;
+}
+
+#clock_color3{
+  border: 1px solid #C13261;
+  background-color: #C13261;
+  padding: 15px 55px;
+}
+
+#clock_color4{
+  border: 1px solid #E7D5BB;
+  background-color: #E7D5BB;
+  padding: 15px 55px;
+}
+
+#clock_color5{
+  border: 1px solid #ECE6CD;
+  background-color: #ECE6CD;
+  padding: 15px 55px;
+}
+
+.timer_title{
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+  color: #75C9BE;
+  padding-left: 9%;
+  padding-top: 120px;
+  padding-bottom: 90px;
+  border-bottom: 1.35px solid lightgrey;
+  word-spacing: 3px;
+}
+
+#timer_color1{
+  border: 1px solid #75C9BE;
+  background-color: #75C9BE;
+  padding: 15px 55px;
+}
+
+/*color blocks responsive*/
+@media screen and (min-width: 491px) and (max-width: 675px){
+  #pixel_color4, #clock_color4{
+    margin: 17%;
+    margin-top: 52px;
+  }
+
+  #clock_color5{
+    margin-left: -13%;
+    margin-bottom: 17%;
   }
 }
 
-/*homepage hamburger icon*/
+@media screen and (max-width: 490px){
+  #pixel_color3, #drum_color3, #clock_color3{
+    margin: 17%;
+    margin-top: 52px;
+  }
+  
+  #pixel_color4, #clock_color4{
+    margin-left: -12%;
+    margin-bottom: 17%;  
+  }
+
+  #clock_color5{
+    margin: 17%;
+    margin-top: -2%; 
+  }
+}
+
+@media screen and (min-width: 676px) and (max-width: 890px){
+  #clock_color5{
+    margin: 17%;
+    margin-top: 52px;
+  }
+}
+
+/*homepage texts responsive*/
+
+@media screen and (max-height: 770px){
+  .main{
+    margin-top: -70px;
+  }
+}
+
+@media screen and (max-height: 640px){
+  .main{
+    margin-top: -100px;
+  }
+}
+
+@media screen and (max-height: 590px){
+  .main{
+    margin-top: -150px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .main{
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 375px){
+  .main{
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .main{
+    font-size: 27px;
+  }
+}
+
+
+/*contact page emal responsive*/
+
+@media screen and (max-width: 505px){
+  .email{
+    font-size: 23px;
+    margin-top: -28px;
+    margin-left: -22px;
+  }
+  
+  .fa-envelope-o{
+    font-size: 22px !important;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .hello{
+    margin-top: -80px;
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 360px){
+  .hello{
+    margin-top: -60px;
+  }
+}
+
+@media screen and (min-width: 361px) and (max-width: 375px){
+  .hello{
+    margin-top: -40px;
+  }
+}
+
+/*about page profile pic responsive*/
+@media screen and (max-width: 445px){
+  .profile{
+    margin-left: 22%;
+    padding-bottom: 55%;
+  }
+}
+
+
+/*work page list responsive*/
+@media screen and (max-width: 450px){
+  .portfolio-content ul{
+    font-size: 16px;
+  }
+
+  .portfolio-content ul li a{
+    border: none;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .portfolio-content ul li a{
+    border: none;
+    padding: 0px 0px;
+  }
+}
+
+
+
+
 

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JS + CSS Clock</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='icon' href='favicon.ico' type='image/x-icon'/ >
+</head>
+<body>
+
+
+    <div class="clock">
+      <div class="clock-face">
+        <div class="hand hour-hand"></div>
+        <div class="hand min-hand"></div>
+        <div class="hand second-hand"></div>
+      </div>
+    </div>
+
+
+  <style>
+    html {
+      background-color: #81B446;
+      background-size:cover;
+      font-family:'helvetica neue';
+      text-align: center;
+      font-size: 10px;
+    }
+
+    body {
+      margin: 0;
+      font-size: 2rem;
+      display:flex;
+      flex:1;
+      min-height: 100vh;
+      align-items: center;
+    }
+
+    .clock {
+      width: 30rem;
+      height: 30rem;
+      border:20px solid #E7D5BB;
+      border-radius:50%;
+      margin:50px auto;
+      position: relative;
+      padding:2rem;
+      box-shadow:
+        0 0 0 4px rgba(0,0,0,0.1),
+        inset 0 0 0 3px #ECE6CD,
+        inset 0 0 10px black,
+        0 0 10px rgba(0,0,0,0.2);
+    }
+
+    .clock-face {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transform: translateY(-3px); /* account for the height of the clock hands */
+    }
+
+    .hand {
+      position: absolute;
+      top:50%;
+      transform-origin: 100%;
+      transform: rotate(90deg);
+      transition-timing-function: cubic-bezier(0, 2.79, 0.58, 1)
+    }
+
+    .hour-hand{
+      background-color: #5F383C;
+      border-radius: 3px;
+      width: 38%;
+      height: 5.5px;
+      right: 50%;
+    }
+
+    .min-hand{
+      background-color: #5F383C;
+      border-radius: 3px;
+      width: 50%;
+      height: 5.5px;
+      top: 49.5%;
+      right: 50.5%;
+    }
+  
+    .second-hand{
+      background-color: #C13261;
+      border-radius: 2px;
+      width: 53%;
+      height: 4px;
+      right: 50.5%;  
+    }
+
+    @media screen and (max-width: 400px){
+      .clock{
+        width: 13.5em;
+        height: 13.5em;
+      } 
+    }
+
+    @media screen and (max-width: 360px){
+      .clock{
+        width: 11em;
+        height: 11em;
+      } 
+    }
+  
+
+
+
+  </style>
+
+  <script src= "javascript.js" type= "text/javascript" > </script>
+    
+</body>
+</html>
