@@ -542,7 +542,7 @@ html, body {width:100%}
 }
 
 
-.fa-facebook, .fa-instagram, .fa-vimeo{
+.fa-linkedin, .fa-instagram, .fa-vimeo-v{
   color: white;
   width: 100%;
   margin-right: auto;
@@ -559,10 +559,10 @@ html, body {width:100%}
   margin: 3%;
 }
 /*hover social icon*/
-.fa-facebook:hover{
+.fa-linkedin:hover{
   color:#D3D3D3;
 }
-.fa-vimeo:hover{
+.fa-vimeo-v:hover{
   color:#D3D3D3;
 }
 .fa-instagram:hover{
