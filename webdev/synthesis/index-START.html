@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Speech Synthesis</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="voiceinator">
+     <div class="noopacity">
+      <p id="msg"></p>
+     
+      <h1>SPEECH SYNTHESIS</h1>
+
+      <select name="voice" id="voices">
+      </select>
+
+      <label for="rate">Rate:</label>
+      <input name="rate" type="range" min="0" max="3" value="1" step="0.1">
+
+      <label for="pitch">Pitch:</label>
+      <input name="pitch" type="range" min="0" max="2" step="0.1">
+
+      <textarea name="text">Enter text here! </textarea>
+      <button id="stop">Stop!</button>
+      <button id="speak">Speak</button>
+     </div>
+    </div>
+
+<script>
+  const msg = new SpeechSynthesisUtterance();
+  let voices = [];
+  const voicesDropdown = document.querySelector('[name="voice"]');
+  const options = document.querySelectorAll('[type="range"], [name="text"]');
+  const speakButton = document.querySelector('#speak');
+  const stopButton = document.querySelector('#stop');
+  const supportMsg = document.querySelector('#msg');
+  msg.text = document.querySelector('[name="text"]').value;
+
+  /*function populateVoices(){
+    voices = this.getVoices();
+    voicesDropdown.innerHTML = voices
+      .map(voice => `<option value="${voice.name}"> ${voice.name} (${voice.lang})</option>`)
+      .join('');
+  } */
+
+  //Get the list of voices and populate the options 
+  function populateVoices(){
+    voices = speechSynthesis.getVoices();
+    voices.forEach(function(voice, i){
+      const option = document.createElement('option');
+      option.value = voice.name;
+      option.innerHTML = voice.name + '  ' + '(' + voice.lang + (voice.default ? '-default' : '') + ')' ;
+      voicesDropdown.appendChild(option);
+    });
+  }
+
+  //Execute populateVoices
+  populateVoices();
+
+  window.speechSynthesis.onvoiceschanged = function(e) {
+    populateVoices();
+  }; 
+
+  //Toggle and execute different voices
+  function setVoice(){
+    msg.voice = voices.find(voice => voice.name === this.value);
+    toggle();
+  }
+
+  //Toggle
+  function toggle(startOver = true){
+    speechSynthesis.cancel();
+    if(startOver){
+      speechSynthesis.speak(msg);
+    }
+  }
+
+  //Toggle rate and pitch
+  function setOption(){
+    msg[this.name] = this.value;
+    toggle();
+  }
+
+  /*speechSynthesis.addEventListener('voiceschanged', populateVoices);*/
+  voicesDropdown.addEventListener('change', setVoice);
+  options.forEach(option => option.addEventListener('change',setOption));
+  speakButton.addEventListener('click',toggle);
+  stopButton.addEventListener('click', () => toggle(false))
+
+
+  //Check for browser support
+  if ('speechSynthesis' in window){
+    supportMsg.innerHTML = 'Your browser <strong>supports</strong> speech synthesis.';
+  }else{
+    supportMsg.innerHTML = 'Sorry, your browser <strong>does not support</strong> speech synthesis. Try this in <a href="https://www.google.co.uk/intl/en/chrome/browser/canary.html">Chrome Canary</a>.';
+  }
+
+
+
+</script>
+
+</body>
+</html>

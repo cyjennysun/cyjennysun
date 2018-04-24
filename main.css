@@ -691,6 +691,11 @@ html, body {width:100%}
   width: 82%;
 }*/
 
+.exlink a{
+  text-decoration: none;
+  color: Royalblue;
+}
+
 .color_schemes li{
   display: inline-block;
   line-height: 7;
@@ -760,9 +765,6 @@ html, body {width:100%}
   padding: 15px 55px;
 }
 
-.exlink a{
-  text-decoration: none;
-}
 
 .clock_title{
   font-family: 'Lato', sans-serif;
@@ -824,6 +826,36 @@ html, body {width:100%}
   padding: 15px 55px;
 }
 
+.synthesis_title{
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+  color: #C850C0;
+  padding-left: 9%;
+  padding-top: 120px;
+  padding-bottom: 90px;
+  border-bottom: 1.35px solid lightgrey;
+  word-spacing: 3px;
+}
+
+#synthesis_color1{
+  border: 1px solid #4158D0;
+  background-color: #4158D0;
+  padding: 15px 55px;
+}
+
+#synthesis_color2{
+  border: 1px solid #C850C0;
+  background-color: #C850C0;
+  padding: 15px 55px;
+}
+
+#synthesis_color3{
+  border: 1px solid #FFCC70;
+  background-color: #FFCC70;
+  padding: 15px 55px;
+}
+
 /*color blocks responsive*/
 @media screen and (min-width: 491px) and (max-width: 675px){
   #pixel_color4, #clock_color4{
@@ -838,7 +870,7 @@ html, body {width:100%}
 }
 
 @media screen and (max-width: 490px){
-  #pixel_color3, #drum_color3, #clock_color3{
+  #pixel_color3, #drum_color3, #clock_color3, #synthesis_color3{
     margin: 17%;
     margin-top: 52px;
   }
