@@ -141,7 +141,7 @@ textarea {
 }
 
 /*Responsive*/
-@media screen and (m-width: 450px){
+@media screen and (max-width: 450px){
   h1{
     border: none;
   }
