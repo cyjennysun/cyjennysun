@@ -114,7 +114,7 @@
   window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition; //For Chrome
 
   const recognition = new SpeechRecognition();
-  recognition.interimResults - true; //See live feedback when speaking
+  recognition.interimResults = true; //See live feedback when speaking
 
   let p = document.createElement('p');
   const words = document.querySelector('.words');
