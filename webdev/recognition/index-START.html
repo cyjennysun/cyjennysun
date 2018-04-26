@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Speech Detection</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+    <style>
+    html {
+      font-size: 10px;
+    }
+
+    body {
+      background:#ffc600;
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      font-size: 20px;
+    }
+
+    h1{
+      text-align: center;
+      font-size: 20px;
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      padding-top: 20px;
+      margin-bottom: -10px;
+      letter-spacing: 0.8px;
+    }
+
+    .words {
+      max-width:500px;
+      margin:10px auto;
+      background:white;
+      border-radius:5px;
+      box-shadow:10px 10px 0 rgba(0,0,0,0.1);
+      padding:1rem 2rem 1rem 5rem;
+      background: -webkit-gradient(linear, 0 0, 0 100%, from(#d9eaf3), color-stop(4%, #fff)) 0 4px;
+      background-size: 100% 3rem;
+      position: relative;
+      line-height:3rem;
+      outline: none;
+    }
+    p {
+      margin: 0 0 3rem;
+    }
+
+    .words:before {
+      content: '';
+      position: absolute;
+      width: 4px;
+      top: 0;
+      left: 30px;
+      bottom: 0;
+      border: 1px solid;
+      border-color: transparent #efe4e4;
+    }
+
+    .copy{
+      background-color: transparent;
+      border: none;
+      outline: none;
+      cursor: pointer;
+    }
+
+    .copyText{
+        visibility: hidden;
+    	font-size: 16px;
+        display: inline;
+        position: absolute;
+        margin-top: 7px;
+    }
+
+    .copyText.active{
+    	visibility: visible;
+    }
+
+    .msg{
+    	opacity: 0;
+    	transition: 0.5s;
+    	font-size: 16px;
+        display: inline;
+        position: absolute;
+        margin-top: 7px;
+    }
+
+    .msg.active{
+    	opacity: 1;
+    }
+
+    .copyBtn{
+    	max-width: 500px;
+    	margin:40px auto;
+    	margin-bottom: 10px;
+    	padding:1rem 0rem 0rem 0rem;
+    }
+
+  </style>
+ </script>
+</head>
+<body>
+  
+  <h1>Turn on the microphone and start speaking!</h1>
+  <div class="copyBtn">
+  	<button class="copy"><img src="./copy.png" height="32"></button>
+  	<p class="msg">Copied!</p>
+  	<p class="copyText">Copy Text</p>
+  </div>
+  <div class="words" contenteditable> 
+  </div>
+
+
+
+<script>
+  window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition; //For Chrome
+
+  const recognition = new SpeechRecognition();
+  recognition.interimResults - true; //See live feedback when speaking
+
+  let p = document.createElement('p');
+  const words = document.querySelector('.words');
+  words.appendChild(p);
+
+  recognition.addEventListener('result', e => {
+    const transcript = Array.from(e.results)  //Turn results into an array
+    .map(result => result[0])
+    .map(result => result.transcript)
+    .join('')
+
+    p.textContent = transcript;
+    if(e.results[0].isFinal) {
+      p = document.createElement('p');
+      words.appendChild(p);  //Create another new paragraph
+    }
+
+    console.log(transcript);
+  });
+
+  recognition.addEventListener('end', recognition.start); //Listen when we start speaking again after a break
+
+  recognition.start();
+
+  
+  //Hover to appear Copy text
+   const copyText = document.querySelector('.copyText');
+
+    document.querySelector('.copy').onmouseenter = function(){
+      copyText.classList.add('active');
+     };
+    document.querySelector('.copy').onmouseleave = function(){
+      copyText.classList.remove('active');
+     };
+
+
+  //Copy text
+   const msg = document.querySelector('.msg');
+
+    document.querySelector('.copy').onclick = function(){
+      document.querySelector('.words').focus();
+      document.execCommand('selectAll',false, null);
+      document.execCommand('copy');
+      
+      //show Copied! msg 
+      msg.classList.add('active');
+      setTimeout( function(){
+      	msg.classList.remove('active');
+      }, 1500);
+      //remove Copy text
+      copyText.classList.remove('active');
+
+      
+    };
+
+   	
+
+
+</script>
+
+
+
+
+</body>
+</html>

@@ -856,6 +856,24 @@ html, body {width:100%}
   padding: 15px 55px;
 }
 
+.recognition_title{
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+  color: #ffc600;
+  padding-left: 9%;
+  padding-top: 120px;
+  padding-bottom: 90px;
+  border-bottom: 1.35px solid lightgrey;
+  word-spacing: 3px;
+}
+
+#recognition_color1{
+  border: 1px solid #ffc600;
+  background-color: #ffc600;
+  padding: 15px 55px;
+}
+
 /*color blocks responsive*/
 @media screen and (min-width: 491px) and (max-width: 675px){
   #pixel_color4, #clock_color4{
