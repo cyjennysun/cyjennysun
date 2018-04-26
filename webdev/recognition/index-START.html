@@ -94,6 +94,13 @@
     	padding:1rem 0rem 0rem 0rem;
     }
 
+    .favColor{
+      max-width: 650px;
+      margin:40px auto;
+      margin-bottom: 10px;
+      padding:3rem 0rem 0rem 3rem;
+    }
+
   </style>
  </script>
 </head>
@@ -105,8 +112,13 @@
   	<p class="msg">Copied!</p>
   	<p class="copyText">Copy Text</p>
   </div>
-  <div class="words" contenteditable> 
-  </div>
+  
+  <div class="words" contenteditable> </div>
+
+  <p class="favColor">Want to have some fun? Answer the question "What's your favorite color?"</p>
+  
+
+
 
 
 
@@ -131,6 +143,11 @@
       p = document.createElement('p');
       words.appendChild(p);  //Create another new paragraph
     }
+
+    //change color
+    let color = event.results[event.results.length - 1][0].transcript;
+      color = color.replace(/\s/gi,'');    
+      document.body.style.backgroundColor = color;
 
     console.log(transcript);
   });
