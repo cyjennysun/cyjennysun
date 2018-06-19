@@ -136,6 +136,10 @@ body{
   top: 0;
 }
 
+.navicon {
+  color: #ffffff00;
+ }
+
 /*nav responsive*/
 @media screen and (min-width: 48em) {
   .header li {
@@ -169,6 +173,7 @@ body{
   color: white;
   font-family: 'Gill Sans', Lato, Lucida Grande, Tahoma, Helvetica, sans-serif;
   font-size: 23px;
+  font-weight: 400;
   text-align: center;
 
 }
@@ -192,6 +197,7 @@ body{
   color: white;
   font-family: 'Gill Sans', Lato, Lucida Grande, Tahoma, Helvetica, sans-serif;
   font-size: 23px;
+  font-weight: 400;
   text-align: center;
   margin-top: 50px;
 }
@@ -216,6 +222,7 @@ body{
   color: white;
   font-family: 'Gill Sans', Lato, Lucida Grande, Tahoma, Helvetica, sans-serif;
   font-size: 23px;
+  font-weight: 400;
   text-align: center;
   margin-top: 50px;
 }
@@ -236,8 +243,11 @@ body{
   border-radius: 50px;
 }
 
-
-
+.home_footer {
+  padding: 20px;
+  background-color: black;
+ 
+}
 
 .hello{
   color: white;
@@ -407,30 +417,32 @@ html, body {width:100%}
 
 /*Videos Responsive*/
 .video-responsive{
-    overflow:hidden;
-    padding-bottom:56.25%;
-    position:relative;
-    height:0;
-    margin-right:auto;
-    margin-left:auto; 
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+    margin-right: auto;
+    margin-left: auto; 
     width: 80%;
     max-width: 100%; 
 
 }
 .video-responsive iframe{
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
+    border-style: none;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
 
 }
 
 /*Works Descriptions*/
-.works-title{
+.works-title h1{
   color: #84837E;
   font-family: 'Gill Sans', Lato, sans-serif;
   font-size: 35px;
+  font-weight: normal;
   padding-top: 60px;
   margin-right:auto;
   margin-left:auto; 
@@ -474,7 +486,7 @@ html, body {width:100%}
   color:white;
 }
 
-#bg-color{
+.bg-white{
   background-color: white;
 }
 
@@ -483,6 +495,7 @@ html, body {width:100%}
   color: white;
   font-family: 'Baskerville', serif;
   font-size: 40px;
+  font-weight: 200;
   padding-left: 45px;
  }
 .quote{
@@ -1008,7 +1021,6 @@ html, body {width:100%}
     padding: 0px 0px;
   }
 }
-
 
 
 
