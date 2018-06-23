@@ -8,29 +8,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <link rel='icon' href='favicon.ico' type='image/x-icon'/ >
+  <link rel='icon' href='favicon.ico' type='image/x-icon'>
 </head>
 <body>
  
   <div class="container">
     <div class= "minute">
-      <button class="addTimeM"> &#x25B2 </button>
+      <button class="addTimeM" value="add_time"> &#x25B2; </button>
       <p class="timerM"></p> 
-      <button class="reduceTimeM"> &#x25BC </button>
+      <button class="reduceTimeM" value="reduce_time"> &#x25BC; </button>
       <p class= "indicator">MINUTE</p>
     </div>
     
     <div class= "second">
-      <button class="addTimeS"> &#x25B2 </button>
+      <button class="addTimeS" value="add_time"> &#x25B2; </button>
       <p class="timerS"></p>
-      <button class="reduceTimeS"> &#x25BC </button>
+      <button class="reduceTimeS" value="reduce_time"> &#x25BC; </button>
       <p class= "indicator">SECOND</p>
     </div>
     <div class= timesup>Time's up!</div>
     <div class= "Controller">
-      <button id= "reset"> <i class="fas fa-undo"></i> </button>
-      <button id= "pause"> <i class="fas fa-pause-circle"></i> </button>
-      <button id= "start"> <i class="fas fa-play-circle"></i> </button>
+      <button id= "reset" value="reset"> <i class="fas fa-undo"></i> </button>
+      <button id= "pause" value="pause"> <i class="fas fa-pause-circle"></i> </button>
+      <button id= "start" value="start"> <i class="fas fa-play-circle"></i> </button>
     <audio id= "alarm" src= "Alarm.mp3"></audio> 
 
     </div>

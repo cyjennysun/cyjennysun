@@ -1,43 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>Pixel Art Maker!</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
     <link rel="stylesheet" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>@import url('https://fonts.googleapis.com/css?family=Lato:300,400|Quicksand');
-    </style>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand|Lato:300,400" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <link rel='icon' href='favicon.ico' type='image/x-icon'/ >
+    <link rel='icon' href='favicon.ico' type='image/x-icon'>
 </head>
 <body>
 
-    </br>
+    <br/>
     <h1> PIXEL ART MAKER</h1>
 
     <h2 class = "grid_size">Choose Grid Size</h2>
     <form id="sizePicker">
+        <label>
         Grid Height:
         <input type="number" id="inputHeight" name="height" min="1" max="50" value="5">
+        </label>
 
+        <label>
         Grid Width:
         <input type="number" id="inputWeight" name="width" min="1" max= "50" value="5">
+        </label>
       
-        <input type="submit">
+        <input type="submit" value="Submit">
     </form>
 
   
     <h2>Pick A Color</h2>
+    <label for="colorPicker">
     <input type="color" id="colorPicker">
+    </label>
 
 
-
-    </br>
-    </br>
-    </br>
+    <br/>
+    <br/>
+    <br/>
     <table id="pixelCanvas">
     </table>
-    </br>
+    <br/>
     <h2 id="clear">Clear</h2>
 
     <script src="designs.js"></script>
