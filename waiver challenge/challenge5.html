@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Challenge 5</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500" rel="stylesheet">
+	<style>
+	body{
+		margin: 2%;
+		border: 1px solid black;
+		background-color: #b3b3b3;
+	}
+	#image{
+    	line-height:325px;
+		width: 388px;
+    	height: 325px;
+		border:2px solid black;
+		margin:0 auto;
+    	background-repeat: no-repeat;
+    	color:#FFFFFF;
+    	text-align: center;
+    	background-image: url('');
+    	background-color: #8e68ff;
+    	background-size: 100%;
+    	margin-bottom:25px;
+    	font-size:150%;
+	}
+
+	.preview{
+		width:10%;
+		margin-left:17%;
+    	border: 2px solid black;
+	}
+	img{
+		width:95%;
+	}
+	h1{
+		text-align: center;
+	}
+	</style>
+
+	<script>
+	// I used Two functions here.  Starter idea at: 
+	// https://codepen.io/ColleenEMc/pen/XmZzWw
+	function upDate(previewPic) {
+		
+
+		/*document.getElementById("image").style.backgroundImage = "url('http://lalarebelo.com/wp-content/uploads/2017/02/22-Salar-de-Uyuni-deserto-de-sal-bolivia.jpg')"; */
+		
+   		document.getElementById("image").style.backgroundImage = previewPic;
+   		console.log(previewPic);
+  
+
+	}
+	</script>
+</head>
+
+<body>
+	<h1>Challenge 5</h1>
+		<div id = "image">
+			Hover or tab over/into an image below.
+			
+		</div>
+
+		<img class = "preview" tabindex = "1"
+			alt = "Bolivia - Uyuni" 
+			src = "http://lalarebelo.com/wp-content/uploads/2017/02/22-Salar-de-Uyuni-deserto-de-sal-bolivia.jpg"
+			onmouseover = "upDate('http://lalarebelo.com/wp-content/uploads/2017/02/22-Salar-de-Uyuni-deserto-de-sal-bolivia.jpg')"
+			onmouseleave= "upDate('')" 
+			onfocus = "upDate('http://lalarebelo.com/wp-content/uploads/2017/02/22-Salar-de-Uyuni-deserto-de-sal-bolivia.jpg')">
+
+
+		<!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->	
+		<img class = "preview" tabindex = "2"
+			alt = "Croatia - Plitvice Lakes" 
+			src = "https://aviratgroup.files.wordpress.com/2013/04/4971312052_4b896ba198_o.jpg"
+			onmouseover="upDate('https://aviratgroup.files.wordpress.com/2013/04/4971312052_4b896ba198_o.jpg')"
+			onfocus="upDate('https://aviratgroup.files.wordpress.com/2013/04/4971312052_4b896ba198_o.jpg')">
+	
+		<!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->
+		<img class = "preview" tabindex = "3" 
+			src = "https://static.thousandwonders.net/Lake.Louise.original.44.jpg" 
+			alt = "Canada - Lake Louise"
+			onmouseover="upDate('https://static.thousandwonders.net/Lake.Louise.original.44.jpg')"
+			onfocus="upDate('https://static.thousandwonders.net/Lake.Louise.original.44.jpg')">
+
+		<img class = "preview" tabindex = "4"
+			alt = "Bhutan" 
+			src = "https://d1ljaggyrdca1l.cloudfront.net/wp-content/uploads/2017/05/tigers-nest-bhutan-1600x900.jpg"
+			onmouseover="upDate('https://d1ljaggyrdca1l.cloudfront.net/wp-content/uploads/2017/05/tigers-nest-bhutan-1600x900.jpg')"
+			onfocus="upDate('https://d1ljaggyrdca1l.cloudfront.net/wp-content/uploads/2017/05/tigers-nest-bhutan-1600x900.jpg')">
+
+		<img class = "preview"  tabindex = "5"
+			alt = "Australia - Uluru" 
+			src = "http://www.liveshoptravel.com/wp-content/uploads/Damon-Wilder-Uluru-Sunrise-1-Resized.jpg"
+			onmouseover="upDate('http://www.liveshoptravel.com/wp-content/uploads/Damon-Wilder-Uluru-Sunrise-1-Resized.jpg')"
+			onfocus="upDate('http://www.liveshoptravel.com/wp-content/uploads/Damon-Wilder-Uluru-Sunrise-1-Resized.jpg')">
+
+		<img class = "preview" tabindex = "6"
+			alt = "Morocco - Tangier" 
+			src = "https://media.expedia.com/media/content/shared/images/travelguides/Tangier-3495-smallTabletRetina.jpg"
+			onmouseover="upDate('https://media.expedia.com/media/content/shared/images/travelguides/Tangier-3495-smallTabletRetina.jpg')"
+			onfocus="upDate('https://media.expedia.com/media/content/shared/images/travelguides/Tangier-3495-smallTabletRetina.jpg')">
+</body>
+</html>
+	

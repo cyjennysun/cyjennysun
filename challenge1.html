@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JavaScript Challenges</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500" rel="stylesheet">
+    <style>  
+    body {
+      background-color: #3b4db2;
+      color: white;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 300;
+      font-size: 18px;
+      padding: 20px;
+    }
+
+    #check {
+      padding: 20px;
+    }
+
+    #emailfield {
+      padding-left: 20px;
+      display: none;
+    }
+
+    #challenge2 {
+      padding: 20px;
+    }
+
+    input[type=submit]{
+      border-radius: 6px;
+      border: none;
+      background-color: #dc6f8b;
+      color: #3b4db2;
+      padding: 5px;
+      padding-right: 15px;
+      padding-left:15px;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    fieldset {
+      border-color: #a7b9f1;
+    }
+    </style>
+
+    
+    <script>
+	function toggleEmail(){
+
+   if (document.getElementById("subscribe").checked === true) {
+    document.getElementById("emailfield").style.display = "block";
+   } else {
+    document.getElementById("emailfield").style.display = "none";
+   }
+	} 
+    </script>
+
+    <noscript>
+      <style>
+        #emailfield {
+        padding-left: 20px;
+        display: block;
+      }
+      </style>
+    </noscript>
+  </head>
+  <body>
+    <h1>Challenge One</h1>
+    <form action="challenge2.html">
+      <fieldset>
+        <legend>Email subscriptions</legend>
+        <div id="check">
+          <label class= "checkbox">
+            <input type="checkbox" name="subscribe" id="subscribe" onchange="toggleEmail()">
+            Check to toggle the email field.
+          </label>
+        </div>
+
+        <div id="emailfield">
+          <label>
+            Email Address: 
+            <input type="text" name="email" id="email">
+          </label>
+        </div>
+        
+        <div id="challenge2">
+        <input type = "submit" value = "Go To Challenge 2">
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
