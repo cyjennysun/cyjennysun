@@ -518,13 +518,13 @@ a.toc-link{color:currentColor;height:100%}
 
 
 @media (max-width: 1045px) {
-.js-toc {
-display: none;
-}
+	.js-toc {
+		display: none;
+	}
 
-.content{
-	width:100%;
-}
+	.content{
+		width:100%;
+	}
 
 
 .wrapper{
@@ -540,4 +540,6 @@ display: none;
 	left: 0;
 	width: 100%;
 	height: 100%;
+}
+
 }
