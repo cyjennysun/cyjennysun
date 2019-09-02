@@ -423,6 +423,14 @@ article[role="pge-title-content"].contact-header p a:hover{color:#fb5353; text-d
 .commentys-form input[type="button"]:hover{ background-color:#ff5c5c}
 
 
+a.hoverbg:hover, a.hover_bg:active{
+	color: #e77e96;
+	outline: 0;
+}
+
+.hoverbg{
+	color: #404040;
+}
 
 
 
@@ -518,28 +526,13 @@ a.toc-link{color:currentColor;height:100%}
 
 
 @media (max-width: 1045px) {
-	.js-toc {
-		display: none;
-	}
-
-	.content{
-		width:100%;
-	}
-
-
-.wrapper{
-	position: relative;
-	padding-bottom: 56.25%; /* 16:9 */
-	padding-top: 25px;
-	height: 0;
+.js-toc {
+display: none;
 }
 
-.wrapper iframe{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
+.content{
+	width:100%;
 }
 
-}
+
+
