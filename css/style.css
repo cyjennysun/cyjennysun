@@ -219,7 +219,7 @@ header[role="header"] nav #menu-button.open span:nth-child(3) {top: 10px;
 main[role="main-home-wrapper"] { padding-bottom:90px}
 
 main[role="main-inner-wrapper"] { padding-bottom:90px}
-.content{width:92%;}
+.content{width:80%;}
 
 main[role="main-home-wrapper"] article[role="pge-title-content"],main[role="main-inner-wrapper"] article[role="pge-title-content"]{ padding-left:22px}
 
@@ -347,7 +347,7 @@ article[role="pge-title-content"].contact-header p a:hover{color:#fb5353; text-d
 
 .work-details header a:hover i{ color:#fb5353}
 
-.work-details p{ font-size:18px; color:#666666; line-height:32px; margin-left:20px; margin-right:20px; margin-bottom:20px; font-weight:300; text-align: left}
+.work-details p{ font-size:18px; color:#666666; line-height:34px; margin-left:20px; margin-right:20px; margin-bottom:20px; font-weight:300; text-align: left}
 
 .work-details p b{ font-weight:600} 
 
@@ -355,7 +355,7 @@ article[role="pge-title-content"].contact-header p a:hover{color:#fb5353; text-d
 
 .work-details, .content h4 {margin:20px; color:#666666; font-size: 22px; font-weight: 600}
 
-.h4_left {text-align: left}
+.h4_left {text-align: left; line-height: 32px}
 
 .work-details, .content h3 {margin:20px; color:#737373; font-size: 22px; font-weight: 600}
 
@@ -432,7 +432,18 @@ a.hoverbg:hover, a.hover_bg:active{
 	color: #404040;
 }
 
+.hovercg{
+	color:#6C9ADE;
+}
 
+a.hovercg:hover, a.hover_cg:active{
+	color: #6C9ADE;
+	outline: 0;
+}
+
+a.hovercg:visited{
+	color: #F1948A;
+}
 
 hr{
 	background-color: #595a5b;
